@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get "/" => "welcome#top"
+  get "about" => "welcome#about"
+
+  get "projects/new" => "projects#new"
+  get "projects/edit" => "projects#edit"
+  get "projects/index" => "projects#index"
+  get "projects/show" => "projects#show"
+
+  get "users/new" => "users#new"
+  get "users/edit" => "users#edit"
+  get "users/show" => "users#show"
 end
